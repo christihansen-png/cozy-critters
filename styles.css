@@ -44,13 +44,24 @@ section {
 PITCH
 */
 
-.sticky__pitch {
+.sticky__pitch--right {
+  background-color: var(--pitch);
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px var(--cocoa);
+  padding: 8px;
+  transform: rotate(3deg);
+  max-width: 400px;
+  margin: 24px;
+}
+
+.sticky__pitch--left {
   background-color: var(--pitch);
   border-radius: 8px;
   box-shadow: 4px 4px 4px var(--cocoa);
   padding: 8px;
   transform: rotate(-3deg);
   max-width: 400px;
+  margin: 24px;
 }
 
 .pitch__call {
