@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <clipPath id="blanketClip">
+      <path d="M58 262 C70 236 104 222 140 228 C170 233 182 246 200 246 C218 246 232 232 262 228 C298 223 332 238 342 262 L352 330 C300 372 100 372 48 330 Z"/>
+    </clipPath>
+    <clipPath id="badge"><circle cx="200" cy="200" r="182"/></clipPath>
+  </defs>
+
+  <!-- badge -->
+  <circle cx="200" cy="200" r="190" fill="#A86B3C"/>
+  <circle cx="200" cy="200" r="182" fill="#F7F1E5"/>
+  <circle cx="200" cy="200" r="168" fill="none" stroke="#8A9A7B" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/>
+
+  <g clip-path="url(#badge)">
+    <!-- sleepy z's -->
+    <g fill="none" stroke="#A86B3C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M284 104 h18 l-18 20 h18"/>
+      <path d="M310 80 h13 l-13 14 h13"/>
+    </g>
+
+    <!-- ears -->
+    <g stroke="#3B2A20" stroke-width="6" stroke-linejoin="round">
+      <path d="M128 168 L136 96 L188 136 Z" fill="#D9A066"/>
+      <path d="M272 168 L264 96 L212 136 Z" fill="#D9A066"/>
+      <path d="M144 150 L148 116 L174 138 Z" fill="#EBB3A9" stroke="none"/>
+      <path d="M256 150 L252 116 L226 138 Z" fill="#EBB3A9" stroke="none"/>
+    </g>
+
+    <!-- head -->
+    <ellipse cx="200" cy="196" rx="94" ry="78" fill="#D9A066" stroke="#3B2A20" stroke-width="6"/>
+    <!-- forehead stripes -->
+    <g stroke="#B9783F" stroke-width="6" stroke-linecap="round">
+      <path d="M200 124 v20"/><path d="M182 128 l4 15"/><path d="M218 128 l-4 15"/>
+    </g>
+    <!-- muzzle -->
+    <ellipse cx="200" cy="222" rx="38" ry="26" fill="#F7E6CF"/>
+
+    <!-- closed eyes -->
+    <g fill="none" stroke="#3B2A20" stroke-width="6" stroke-linecap="round">
+      <path d="M150 192 q16 14 32 0"/>
+      <path d="M218 192 q16 14 32 0"/>
+    </g>
+    <!-- cheeks -->
+    <ellipse cx="148" cy="218" rx="14" ry="8" fill="#EBB3A9" opacity="0.8"/>
+    <ellipse cx="252" cy="218" rx="14" ry="8" fill="#EBB3A9" opacity="0.8"/>
+    <!-- nose + mouth -->
+    <path d="M192 208 h16 l-8 9 Z" fill="#D9826F" stroke="#3B2A20" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M200 217 q-6 10 -14 4 M200 217 q6 10 14 4" fill="none" stroke="#3B2A20" stroke-width="4" stroke-linecap="round"/>
+    <!-- whiskers -->
+    <g stroke="#3B2A20" stroke-width="3" stroke-linecap="round">
+      <path d="M126 210 l-30 -6"/><path d="M126 220 l-30 4"/>
+      <path d="M274 210 l30 -6"/><path d="M274 220 l30 4"/>
+    </g>
+
+    <!-- blanket -->
+    <path d="M58 262 C70 236 104 222 140 228 C170 233 182 246 200 246 C218 246 232 232 262 228 C298 223 332 238 342 262 L352 330 C300 372 100 372 48 330 Z" fill="#8A9A7B"/>
+    <g clip-path="url(#blanketClip)" opacity="0.55">
+      <g stroke="#F7F1E5" stroke-width="10">
+        <path d="M30 280 H370"/><path d="M30 318 H370"/>
+        <path d="M110 200 V380"/><path d="M200 200 V380"/><path d="M290 200 V380"/>
+      </g>
+      <g stroke="#A86B3C" stroke-width="4">
+        <path d="M30 296 H370"/><path d="M150 200 V380"/><path d="M250 200 V380"/>
+      </g>
+    </g>
+    <path d="M58 262 C70 236 104 222 140 228 C170 233 182 246 200 246 C218 246 232 232 262 228 C298 223 332 238 342 262 L352 330 C300 372 100 372 48 330 Z" fill="none" stroke="#3B2A20" stroke-width="6" stroke-linejoin="round"/>
+    <!-- folded blanket edge -->
+    <path d="M70 258 C110 240 160 256 200 256 C240 256 290 240 330 258" fill="none" stroke="#3B2A20" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- paws peeking over -->
+    <g fill="#D9A066" stroke="#3B2A20" stroke-width="5">
+      <ellipse cx="160" cy="246" rx="22" ry="15"/>
+      <ellipse cx="240" cy="246" rx="22" ry="15"/>
+    </g>
+    <g stroke="#3B2A20" stroke-width="3" stroke-linecap="round">
+      <path d="M153 240 v8"/><path d="M167 240 v8"/>
+      <path d="M233 240 v8"/><path d="M247 240 v8"/>
+    </g>
+
+    <!-- little heart -->
+    <path d="M104 104 c-8 -12 -26 -4 -18 10 l18 16 l18 -16 c8 -14 -10 -22 -18 -10 Z" fill="#D9826F" opacity="0.85"/>
+  </g>
+</svg>

@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozy Critters</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f5922447fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <section class="sticky__pitch">
+      <p class="sticky__pitch--para">
+        <span class="pitch__call"> This is a sample website</span> by Beautiful You Web Studio. Look for the 💡 sticky notes to see how each feature can help your shop grow!
+      </p>
+    </section>
+    <header class="nav">
+      <div class="nav__logo--wrapper">
+        <img
+          src="./assets/cozy-critters-logo.svg"
+          alt="Kitten Logo"
+          class="nav__logo--img"
+        />
+        <h1><span class="spot__light"> Cozy Critters</span></h1>
+      </div>
+      <nav class="nav__links">
+        <a href="#" class="nav__link">Gift Cards</a>
+        <a href="#" class="nav__link">Sales</a>
+        <a href="#" class="nav__link">Hours</a>
+        <a href="#" class="nav__link">Contact</a>
+      </nav>
+    </header>
+    <section class="hero__container">
+      <div class="hero__intro">
+        <h2 class="hero__title">
+          Where Every <span class="spot__light">Critter </span>Feels at Home
+        </h2>
+        <p class="hero__para">
+          🐾 At Cozy Critters, we believe home is where the snuggles are. Our
+          little shop is full of candles, decor, and pet outfits picked to make
+          your space feel warm and loved, whether your family has paws, claws,
+          or just a lot of blankets. 🐾
+        </p>
+        <a href="#shop__search" class="btn__link"> Find your Cozy </a>
+      </div>
+    </section>
+    <section class="gift__wrapper">
+      <div class="gift__intro">
+        <h2 class="gift__title">
+          Gift cards for <span class="spot__light">Any </span>occasion!
+        </h2>
+        <p class="gift__para">
+          Not sure what to get? Let them pick their own cozy! Choose an amount,
+          pick an occasion, add a sweet note, and we’ll send a Cozy Critters
+          gift card straight to their inbox. It’s perfect for birthdays,
+          anniversaries, holidays, or just because. 🐾
+        </p>
+      </div>
+      <div class="sticky__pitch">
+        <p class="sticky__pitch--para">
+          💡 <span class="pitch__call"> For shop owners</span> Turn every holiday into extra sales, even after you
+          close for the day. Customers can buy gift cards anytime, from
+          anywhere, and they’re delivered right to the recipient’s inbox. That
+          means sales while you sleep, new faces walking through your door to
+          spend them, and most people spend more than the card’s value once
+          they’re in your shop.
+        </p>
+      </div>
+      <div class="gift__card--wrapper">
+        <div class="card__amounts">
+          <p class="card__amount--question">🐾 Pick an amount:</p>
+        </div>
+        <div class="card__amount--answer">
+          <input
+            class="cost__btn"
+            type="radio"
+            id="price-25"
+            name="price"
+            value="$25"
+          />
+          <label for="price-25">$25</label>
+          <input
+            class="cost__btn"
+            type="radio"
+            id="price-50"
+            name="price"
+            value="$50"
+          />
+          <label for="price-50">$50</label>
+          <input
+            class="cost__btn"
+            type="radio"
+            id="price-100"
+            name="price"
+            value="$100"
+          />
+          <label for="price-100">$100</label>
+          <input
+            class="cost__btn"
+            type="radio"
+            id="price-any"
+            name="price"
+            value="price__custom"
+          />
+          <label for="price-any">Custom Amount</label>
+        </div>
+        <div class="custom__wrapper--price" id="custom__price--box">
+          <label for="custom__price">🤑 Pick your own price</label>
+          <input
+            class="custom__price--input"
+            type="number"
+            id="custom__price"
+            name="custom__price"
+            min="10"
+            max="500"
+            step="5"
+            placeholder="10-500"
+          />
+        </div>
+        <div class="card__occasion">
+          <p class="card__occasion--question">🐾 Pick an Occasion:</p>
+        </div>
+        <div class="card__occasion--answer">
+          <label for="occasion-b">
+            <input
+              class="occasion__btn"
+              type="radio"
+              id="occasion-b"
+              onchange="pickOccasion('birthday', 'Happy Birthday!🎈')"
+              name="occasion"
+              value="birthday"
+            />
+            🎈Happy Birthday
+          </label>
+          <label for="occasion-a">
+            <input
+              class="occasion__btn"
+              type="radio"
+              id="occasion-a"
+              onchange="pickOccasion('anniversary', 'Happy Anniversary!💍')"
+              name="occasion"
+              value="anniversary"
+            />
+            💍Happy Anniversary
+          </label>
+          <label for="occasion-holiday">
+            <input
+              class="occasion__btn"
+              type="radio"
+              id="occasion-holiday"
+              onchange="pickOccasion('christmas', 'Merry Christmas!🎄')"
+              name="occasion"
+              value="holiday"
+            />
+            🎄Merry Christmas
+          </label>
+          <label for="occasion-custom">
+            <input
+              class="occasion__btn"
+              type="radio"
+              onchange="pickOccasion('custom', 'In your own words')"
+              id="occasion-custom"
+              name="occasion"
+              value="custom__occasion"
+            />
+            ✏️In your own words
+          </label>
+        </div>
+      <div class="custom__wrapper--message" id="message__box">
+        <div class="custom__message--title">
+          <label for="occasion-custom--message"
+            >Write your message here ✏️</label
+          >
+          <input
+            class="occasion__message--box"
+            type="text"
+            id="occasion-custom--message"
+            placeholder="Thanks for..."
+            name="occasion__message"
+            maxlength="40"
+          />
+        </div>
+        </div>
+        <div class="card__form">
+          <label for="to">To:</label>
+          <input type="text" name="to" placeholder="Name" id="to" />
+          <label for="from">From:</label>
+          <input type="text" name="from" placeholder="Name" id="from" />
+          <label for="email">E-Mail:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="janedoe@email.com"
+            id="email"
+          />
+        </div>
+        <div class="card card--custom" id="card">
+          <div class="card__logo">
+            <img
+              src="./assets/cozy-critters-logo.svg"
+              alt="cozy critters logo"
+              class="show__gift--img"
+            />
+            <h3 class="card__title">Cozy Critters</h3>
+          </div>
+          <div class="card__main">
+            <p class="show__card--price">
+              $<span class="show__card" id="card__price">0</span>
+            </p>
+            <div class="card__about--box">
+            <h4 class="show__card--title" id="card__title">Pick an occasion</h4>
+            <p class="show__card--to">
+              To: <span class="show__card" id="card__to">Name</span>
+            </p>
+            <p class="show__card--from">
+              From: <span class="show__card" id="card__from">Name</span>
+            </p>
+            </div>
+          </div>
+        </div>
+        <div class="gift__btn">
+          <button class="buy__gift">Send 🐾 Gift</button>
+        </div>
+      </div>
+    </section>
+    <section class="shop__container">
+      <div class="shop__intro">
+        <h2 class="shop__title">Everything from candles to blankets</h2>
+        <div class="search__bar--wrapper" id="shop__search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="search"
+            aria-label="search product"
+            placeholder="Search cozy goodies..."
+            class="search__bar"
+          />
+        </div>
+      </div>
+      <div class="shop__cards">
+        <div class="shop__card">
+          <img
+            src="./assets/puppy-costume.jpg"
+            alt="puppy costume"
+            class="product__img"
+          />
+          <h3 class="product__name">Goochie-Poochie</h3>
+          <p class="product__price">$18.99</p>
+          <button class="cart__add">Add to Cart</button>
+          <button class="cart__wish">Add to WishList</button>
+        </div>
+        <div class="shop__card">
+          <img
+            src="./assets/kitty-costume.jpg"
+            alt="kitty costume"
+            class="product__img"
+          />
+          <h3 class="product__name">Kitty Costume</h3>
+          <p class="product__price">$23.99</p>
+          <button class="cart__add">Add to Cart</button>
+          <button class="cart__wish">Add to WishList</button>
+        </div>
+        <div class="shop__card">
+          <img
+            src="./assets/custom-candle.jpg"
+            alt="hands making candles"
+            class="product__img"
+          />
+          <h3 class="product__name">Custom Candles</h3>
+          <p class="product__price">$10-20</p>
+          <div class="custom__wrapper--candle" id="message__box--candle">
+            <label for="candle-custom--message"
+              >Write your message here ✏️</label
+            >
+            <input
+              class="candle__message--box"
+              type="text"
+              id="candle-custom--message"
+              placeholder="Bring warmth and Joy from me to you!"
+              name="custom__candle--label"
+            />
+          </div>
+          <button class="cart__add">Add to Cart</button>
+          <button class="cart__wish">Add to WishList</button>
+        </div>
+        <div class="shop__card">
+          <img
+            src="./assets/plaid-blanket.jpg"
+            alt="red plaid blanket on grass"
+            class="product__img"
+          />
+          <h3 class="product__name">Plaid Blanket</h3>
+          <p class="product__price">$15.99</p>
+          <button class="cart__add">Add to Cart</button>
+          <button class="cart__wish">Add to WishList</button>
+        </div>
+        <div class="shop__card">
+          <img
+            src="./assets/blanket-ladder.jpg"
+            alt="blanket ladder"
+            class="product__img"
+          />
+          <h3 class="product__name">Blanket Ladder</h3>
+          <p class="product__price">$39.99</p>
+          <button class="cart__add">Add to Cart</button>
+          <button class="cart__wish">Add to WishList</button>
+        </div>
+        <div class="shop__card">
+          <img
+            src="./assets/scented-candles.jpg"
+            alt="candles on wood tray"
+            class="product__img"
+          />
+          <h3 class="product__name">Scented Candles</h3>
+          <p class="product__price">$9.99</p>
+          <button class="cart__add">Add to Cart</button>
+          <button class="cart__wish">Add to WishList</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
