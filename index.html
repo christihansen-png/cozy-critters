@@ -188,7 +188,7 @@
           <input
             class="occasion__message--box"
             type="text"
-            id="occasion-custom--message"
+            id="occasion-custom--message" oninput="typeName('card__title',this.value)"
             placeholder="Thanks for..."
             name="occasion__message"
             maxlength="40"
@@ -197,9 +197,9 @@
         </div>
         <div class="card__form">
           <label for="to">To:</label>
-          <input type="text" name="to" placeholder="Name" id="to" />
+          <input type="text" name="to" placeholder="Name" id="to" oninput="typeName('card__to',this.value)" />
           <label for="from">From:</label>
-          <input type="text" name="from" placeholder="Name" id="from" />
+          <input type="text" name="from" placeholder="Name" id="from" oninput="typeName('card__from', this.value)" />
           <label for="email">E-Mail:</label>
           <input
             type="email"
