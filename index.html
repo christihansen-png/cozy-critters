@@ -86,6 +86,7 @@
             id="price-25"
             name="price"
             value="$25"
+            onchange="pickPrice('25')"
           />
           <label for="price-25">$25</label>
           <input
@@ -94,6 +95,7 @@
             id="price-50"
             name="price"
             value="$50"
+            onchange="pickPrice('50')"
           />
           <label for="price-50">$50</label>
           <input
@@ -102,6 +104,7 @@
             id="price-100"
             name="price"
             value="$100"
+            onchange="pickPrice('100')"
           />
           <label for="price-100">$100</label>
           <input
@@ -110,6 +113,7 @@
             id="price-any"
             name="price"
             value="price__custom"
+            onchange="pickPrice('custom')"
           />
           <label for="price-any">Custom Amount</label>
         </div>
@@ -117,6 +121,7 @@
           <label for="custom__price">🤑 Pick your own price</label>
           <input
             class="custom__price--input"
+            oninput="typePrice(this.value)"
             type="number"
             id="custom__price"
             name="custom__price"
@@ -146,7 +151,7 @@
               class="occasion__btn"
               type="radio"
               id="occasion-a"
-              onchange="pickOccasion('anniversary', 'Happy Anniversary!💍')"
+              onchange="pickOccasion('anniversary', '💍 Happy Anniversary!')"
               name="occasion"
               value="anniversary"
             />
@@ -203,7 +208,7 @@
             id="email"
           />
         </div>
-        <div class="card card--custom" id="card">
+        <div class="card" id="card">
           <div class="card__logo">
             <img
               src="./assets/cozy-critters-logo.svg"

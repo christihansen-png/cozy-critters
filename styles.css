@@ -194,7 +194,7 @@ GIFT CARD
 }
 
 .custom__wrapper--price {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   gap: 24px;
@@ -271,21 +271,25 @@ textarea {
   min-height: 32px;
 }
 
-.card--custom {
+.card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  max-width: 650px;
+  max-width: 250px;
   background-color: var(--oatmeal);
+  background-size: cover;
+  background-position: center;
   box-shadow: 6px 6px 8px var(--cocoa);
   border-radius: 8px;
   padding: 8px;
   gap: 8px;
   color: var(--cocoa);
-  text-shadow: 1px 1px 3px #8a9a7b;
+  text-shadow: 1px 1px 3px var(--sage);
   aspect-ratio: 1.6;
   transform: rotate(7deg);
+  width: 100%;
+  margin: 24px 0;
 }
 
 .card__logo {
@@ -293,31 +297,61 @@ textarea {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 32px;
+  padding-top: 8px;
 }
 
 .card__title {
   font-size: 28px;
-  color: var(--cocoa);
-  text-shadow: 1px 2px 3px var(--sage);
 }
 
 .card__main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 32px;
+  gap: 8px;
 }
 
 .show__card--price {
-  font-size: 48px;
-  font-weight: 800;
-  color: var(--cocoa);
-  text-shadow: 1px 2px 4px var(--sage);
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .show__gift--img {
   max-width: 48px;
+}
+
+
+.card--birthday {
+  background-image: linear-gradient(rgba(247,241, 229, 0.4), rgba(247, 241, 229, 0.4)), url("./assets/birthday-bg.jpg");
+  color: teal;
+  text-shadow: 1px 1px 1px var(--cocoa);
+}
+
+.card--anniversary {
+  background-image: linear-gradient(rgba(247,241, 229, 0.2), rgba(247, 241, 229, 0.2)), url("./assets/anniversary2-bg.jpg");
+  color: var(--cream);
+  text-shadow: 2px 2px 1px var(--cocoa);
+}
+
+.card--anniversary .card__logo {
+  margin-top: 24px;
+}
+
+.card--christmas {
+  background-image: url("./assets/christmas-bg.jpg");
+  color: var(--cream);
+  text-shadow: 3px 3px 1px var(--cocoa);
+  font-weight: 800;
+}
+
+.card--christmas .card__logo {
+  margin-top: 32px;
+}
+
+.card--custom {
+  background-image:  linear-gradient(rgba(247,241, 229, 0.4), rgba(247, 241, 229, 0.4)), url("./assets/puppy-bg.jpg");
+  color: rgb(245, 100, 124);
+  text-shadow: 1px 1px 1px var(--cocoa);
 }
 
 .buy__gift {
