@@ -39,4 +39,12 @@ function typeName(spot, name) {
   cardSpot.textContent = name;
 }
 
+function sendGift() {
+  const email = document.getElementById('email').value;
+  const giftConfirm = document.getElementById('gift__confirm');
+
+  giftConfirm.textContent = "💕 Your Cozy Critter Gift Card is on its way to " + email + "!";
+  giftConfirm.style.display = "block";
+}
+
 

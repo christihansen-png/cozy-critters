@@ -33,10 +33,10 @@
         <h1><span class="spot__light"> Cozy Critters</span></h1>
       </div>
       <nav class="nav__links">
-        <a href="#" class="nav__link">Gift Cards</a>
-        <a href="#" class="nav__link">Sales</a>
-        <a href="#" class="nav__link">Hours</a>
-        <a href="#" class="nav__link">Contact</a>
+        <a href="#gifts" class="nav__link">Gift Cards</a>
+        <a href="#shop" class="nav__link">Sales</a>
+        <a href="#hours" class="nav__link">Hours</a>
+        <a href="#phone" class="nav__link">Contact</a>
       </nav>
     </header>
     <section class="hero__container">
@@ -58,7 +58,7 @@
         <h2 class="gift__title">
           Gift cards for <span class="spot__light">Any </span>occasion!
         </h2>
-        <p class="gift__para">
+        <p class="gift__para" id="gifts" >
           Not sure what to get? Let them pick their own cozy! Choose an amount,
           pick an occasion, add a sweet note, and we’ll send a Cozy Critters
           gift card straight to their inbox. It’s perfect for birthdays,
@@ -233,14 +233,20 @@
           </div>
         </div>
         <div class="gift__btn">
-          <button class="buy__gift">Send 🐾 Gift</button>
+          <button class="buy__gift" onclick="sendGift()">Send 🐾 Gift</button>
+          <p class="send__gift" id="gift__confirm"></p>
+        </div>
+        <div class="sticky__pitch--left">
+          <p class="sticky__pitch--para">
+            💡 <span class="pitch__call"> For shop owners</span> On your real site, shoppers pay securely right here, and the gift card is emailed instantly to the recipient. You get a copy of every sale, so you always know what’s been sold and what’s been redeemed.
+          </p>
         </div>
       </div>
     </section>
     <section class="shop__container">
       <div class="shop__intro">
-        <h2 class="shop__title">Everything from candles to blankets</h2>
-        <div class="sticky__pitch--left">
+        <h2 class="shop__title" id="shop" >Everything from candles to blankets</h2>
+        <div class="sticky__pitch--right">
             <p class="sticky__pitch--para">
               💡 <span class="pitch__call"> For shop owners</span> Shoppers can search to find exactly what they want, fast. A wishlist brings them back later to buy, and a personal message option turns any candle into a thoughtful gift, which means more sales all year long.
             </p>
@@ -355,5 +361,46 @@
         </div>
       </div>
     </section>
+    <section class="contact__box">
+       <h2 class="contact__title">Getting in touch!</h2>
+      <ul class="contact__items">
+        <li class="contact__item" id="phone" >
+          <i class="fa-solid fa-square-phone-flip"></i>(209)555-0799
+        </li>
+        <li class="contact__item"><i class="fa-solid fa-address-book"></i>
+        0 Main St. Sutter Creek, Ca. 95685</li>
+      </ul>
+      <div class="contact__maps">
+      <ul class="contact__hours">
+        <li class="hour__title" id="hours" >Store Hours</li>
+        <li class="contact__hour">Sunday: 8am - 5pm</li>
+        <li class="contact__hour">Monday: 8am - 5pm</li>
+        <li class="contact__hour">Tuesday: Closed</li>
+        <li class="contact__hour">Wednesday: Closed</li>
+        <li class="contact__hour">Thursday: 8am - 5pm</li>
+        <li class="contact__hour">Friday: 8am - 8pm</li>
+        <li class="contact__hour">Saturday: 8am - 8pm</li>
+      </ul>
+        <img alt="Map of Cozy Critters in Sutter Creek" class="contact__map" src="assets/shop-map.png">
+      </div>
+    </section>
+    <footer class="footer__container">
+      <div class="footer__logo">
+        <img
+          src="./assets/cozy-critters-logo.svg"
+          alt="Kitten Logo"
+          class="footer__logo--img"
+        />
+        <h1><span class="spot__light--footer"> Cozy Critters</span></h1>
+      </div>
+      <div class="footer__links">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-square-snapchat"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+      </div>
+      <div class="copy__right"><p class="footer__copyright">© 2026 Cozy Critters. All rights reserved. | Website by <a href="https://beautifulyouwebstudio.com" class="footer__link">Beautiful You Web Studio</a></p></div>
+    </footer>
   </body>
 </html>
