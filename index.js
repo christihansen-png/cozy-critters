@@ -61,3 +61,15 @@ function toggleWish(button) {
     button.textContent = "Add to WishList";
   }
 }
+
+function customCandle(checked) {
+  
+  const candleBox = document.
+  getElementById("message__box--candle");
+
+  if (checked) {
+    candleBox.style.display = "flex";
+  } else {
+    candleBox.style.display = "none";
+  }
+}

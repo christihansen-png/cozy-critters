@@ -441,6 +441,10 @@ SHOP
   gap: 8px;
 }
 
+.candle__message--box {
+  text-align: center;
+}
+
 .product__img {
   width: 100%;
   height: 200px;
@@ -449,7 +453,6 @@ SHOP
 }
 
 .custom__wrapper--candle {
-  display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;

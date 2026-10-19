@@ -249,7 +249,7 @@
         <h2 class="shop__title" id="shop" >Everything from candles to blankets</h2>
         <div class="sticky__pitch--right">
             <p class="sticky__pitch--para">
-              💡 <span class="pitch__call"> For shop owners</span> Shoppers can search to find exactly what they want, fast. A wishlist brings them back later to buy, and a personal message option turns any candle into a thoughtful gift, which means more sales all year long.
+              💡 <span class="pitch__call"> For shop owners</span> Shoppers can search to find exactly what they want, fast. A wishlist brings them back later to buy, and a personal message option turns any candle into a thoughtful gift, which means more sales all year long. (In this demo, the cart and wishlist reset when you refresh. On your real site, they’re saved for each shopper.)
             </p>
           </div>
         <div class="search__bar--wrapper" id="shop__search">
@@ -301,7 +301,7 @@
             <input class="custom__checkbox" type="checkbox"
             id="message-custom"
             name="message"
-            value="custom__message"  >
+            value="custom__message" onchange="customCandle(this.checked)">
             <label for="message-custom">Add your personal touch</label>
               </div>
           <div class="custom__wrapper--candle" id="message__box--candle">
