@@ -37,6 +37,7 @@
         <a href="#shop" class="nav__link">Sales</a>
         <a href="#hours" class="nav__link">Hours</a>
         <a href="#phone" class="nav__link">Contact</a>
+        <i class="fa-solid fa-cart-shopping" color="#c96b7a" ></i></i><span class="cart__add" min="0" id="cart__count">0</span>
       </nav>
     </header>
     <section class="hero__container">
@@ -271,8 +272,8 @@
           <h3 class="product__name">Goochie-Poochie</h3>
           <p class="product__price">$18.99</p>
           <div class="product__btn">
-            <button class="cart__add">Add to Cart</button>
-            <button class="cart__wish">Add to WishList</button>
+            <button class="cart__add" onclick="addToCart()">Add to Cart</button>
+            <button class="cart__wish" onclick="toggleWish(this)">Add to WishList</button>
           </div>
         </div>
         <div class="shop__card">
@@ -284,8 +285,8 @@
           <h3 class="product__name">Kitty Costume</h3>
           <p class="product__price">$23.99</p>
           <div class="product__btn">
-            <button class="cart__add">Add to Cart</button>
-            <button class="cart__wish">Add to WishList</button>
+            <button class="cart__add" onclick="addToCart()">Add to Cart</button>
+            <button class="cart__wish" onclick="toggleWish(this)">Add to WishList</button>
           </div>
         </div>
         <div class="shop__card">
@@ -316,8 +317,8 @@
             />
           </div>
           <div class="product__btn">
-            <button class="cart__add">Add to Cart</button>
-            <button class="cart__wish">Add to WishList</button>
+            <button class="cart__add" onclick="addToCart()">Add to Cart</button>
+            <button class="cart__wish" onclick="toggleWish(this)">Add to WishList</button>
           </div>
         </div>
         <div class="shop__card">
@@ -329,8 +330,8 @@
           <h3 class="product__name">Plaid Blanket</h3>
           <p class="product__price">$15.99</p>
           <div class="product__btn">
-            <button class="cart__add">Add to Cart</button>
-            <button class="cart__wish">Add to WishList</button>
+            <button class="cart__add" onclick="addToCart()">Add to Cart</button>
+            <button class="cart__wish" onclick="toggleWish(this)">Add to WishList</button>
           </div>
         </div>
         <div class="shop__card">
@@ -342,8 +343,8 @@
           <h3 class="product__name">Blanket Ladder</h3>
           <p class="product__price">$39.99</p>
           <div class="product__btn">
-            <button class="cart__add">Add to Cart</button>
-            <button class="cart__wish">Add to WishList</button>
+            <button class="cart__add" onclick="addToCart()">Add to Cart</button>
+            <button class="cart__wish" onclick="toggleWish(this)">Add to WishList</button>
           </div>
         </div>
         <div class="shop__card">
@@ -355,19 +356,24 @@
           <h3 class="product__name">Scented Candles</h3>
           <p class="product__price">$9.99</p>
           <div class="product__btn">
-            <button class="cart__add">Add to Cart</button>
-            <button class="cart__wish">Add to WishList</button>
+            <button class="cart__add"  onclick="addToCart()">Add to Cart</button>
+            <button class="cart__wish" onclick="toggleWish(this)">Add to WishList</button>
           </div>
         </div>
       </div>
     </section>
     <section class="contact__box">
        <h2 class="contact__title">Getting in touch!</h2>
+           <div class="sticky__pitch--left">
+            <p class="sticky__pitch--para">
+              💡 <span class="pitch__call"> For shop owners</span> Customers can find you in seconds, with your address, a map and a phone number they can tap to call right from their phone. Holiday hours or a surprise closure? Your hours can be updated in minutes, so no one shows up to a locked door.
+            </p>
+          </div>
       <ul class="contact__items">
         <li class="contact__item" id="phone" >
-          <i class="fa-solid fa-square-phone-flip"></i>(209)555-0799
+          <i class="fa-solid fa-square-phone-flip"></i><a class="contact__num" href="tel:2095550799">(209)555-0799</a>
         </li>
-        <li class="contact__item"><i class="fa-solid fa-address-book"></i>
+        <li class="contact__item--address"><i class="fa-solid fa-address-book"></i>
         0 Main St. Sutter Creek, Ca. 95685</li>
       </ul>
       <div class="contact__maps">
@@ -385,6 +391,11 @@
       </div>
     </section>
     <footer class="footer__container">
+          <div class="sticky__pitch--right">
+            <p class="sticky__pitch--para">
+              💡 <span class="pitch__call"> For shop owners</span> Every page ends with links to all your social media, so every website visitor is a chance to gain a new follower. Followers see your new arrivals, sales and events in their feeds, which is free advertising that keeps bringing them back.
+            </p>
+          </div>
       <div class="footer__logo">
         <img
           src="./assets/cozy-critters-logo.svg"

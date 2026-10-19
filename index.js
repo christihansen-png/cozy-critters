@@ -1,4 +1,5 @@
 
+let cartCount = 0;
 
 function pickOccasion(occasion, title) {
   const card = document.getElementById("card");
@@ -48,3 +49,15 @@ function sendGift() {
 }
 
 
+function addToCart() {
+  cartCount = cartCount + 1;
+  document.getElementById("cart__count").textContent = cartCount;
+}
+
+function toggleWish(button) {
+  if (button.textContent === "Add to WishList") {
+    button.textContent = "♥ On your WishList";
+  } else {
+    button.textContent = "Add to WishList";
+  }
+}
