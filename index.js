@@ -1,6 +1,13 @@
 
 let cartCount = 0;
 
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closePitch();
+  }
+});
+
 function pickOccasion(occasion, title) {
   const card = document.getElementById("card");
   const cardTitle = document.getElementById("card__title");
@@ -72,4 +79,19 @@ function customCandle(checked) {
   } else {
     candleBox.style.display = "none";
   }
+}
+
+function closePitch() {
+  document.getElementById("pitch").classList.remove("pitch--open");
+  localStorage.setItem("pitchSeen", "yes");
+}
+
+if (!localStorage.getItem("pitchSeen")) {
+  setTimeout(function () {
+    document.getElementById("pitch").classList.add("pitch--open");
+  }, 3000);
+}
+
+function openPitch() {
+  document.getElementById("pitch").classList.add("pitch--open");
 }
