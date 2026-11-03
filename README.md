@@ -28,7 +28,7 @@ Green 💡 sticky notes throughout the page explain to shop owners how each feat
 - A "Send" confirmation shows the shopper's email address
 
 **Shopping**
-- Cart counter in the nav that **remembers its number after a refresh** (localStorage)
+- Cart counter in the nav that counts up as items are added
 - Wishlist buttons that toggle on and off
 - Custom candle option that shows a message box when checked
 

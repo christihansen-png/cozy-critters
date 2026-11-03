@@ -103,6 +103,7 @@ PITCH
   position: fixed;
   left: 24px;
   bottom: 24px;
+  z-index: 50; /* sits behind the footer */
   background-color: transparent;
   border: none;
   font-size: 48px;
@@ -739,6 +740,8 @@ FOOTER
 .footer__container {
   background-color: var(--sage);
   width: 100%;
+  position: relative;
+  z-index: 60; /* footer slides over the butterfly tab */
 }
 
 .footer__logo {
