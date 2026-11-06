@@ -73,5 +73,5 @@ Hero photos by Melika Pourramezan, Ema Trinh and nadialovessingle on [Pexels](ht
 
 ## Author
 
-**Christi Hansen** | Beautiful You Web Studio
+**Christi Hansen Moore** | Beautiful You Web Studio
 [beautifulyouwebstudio.com](https://beautifulyouwebstudio.com) | [Portfolio](https://christihansen-png.github.io/eportfolio.christi/) | [GitHub](https://github.com/christihansen-png)
